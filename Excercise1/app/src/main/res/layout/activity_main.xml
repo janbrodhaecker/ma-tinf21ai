@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <data>
+        <import type="android.view.View"/>
+
+        <variable name="model" type="de.dhbw.ex.one.Model" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image_view_meme"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/meme"
+            android:layout_marginBottom="30dp"
+            android:visibility="@{model.showMeme ? View.VISIBLE : View.INVISIBLE}" />
+
+        <Button
+            android:id="@+id/button_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Push me!"/>
+    </LinearLayout>
+</layout>
