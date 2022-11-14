@@ -37,6 +37,9 @@ class MainActivity : ComponentActivity() {
                     }, navigationIcon = {  })
                 }) {
                     NavHost(navController = navController, startDestination = "overview") {
+                        // TODO add navigations as requested
+                        // - for locationview
+                        // - for directionview
                         composable("overview") { Overview(context, navController) }
                     }
                 }

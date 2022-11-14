@@ -29,6 +29,7 @@ fun Overview(context: Context, navController: NavHostController) {
                 Icon(Icons.Filled.Add, "")
             }
         }, content = {
+            // TODO load locations from LocationModelPersistence
             val locationModels = emptyList<LocationModel>()
             Column {
                 locationModels.forEach {
